@@ -26,25 +26,25 @@
 				<section class="form-claim bg-white">
 					<form action="#" id="formClaim">
 						<div class="form-group">
-							<input type="text" name="firstName" id="firstName" placeholder="First Name" />
-							<img src="./images/icon-error.svg" alt="" class="alert-error-icon" />
+							<input type="text" name="firstName" id="firstName" placeholder="First Name" required />
+							<img src="./images/icon-error.svg" alt="" />
+							<p class="error-text">First Name cannot be empty</p>
 						</div>
-						<p class="alert-error-text">First Name cannot be empty</p>
 						<div class="form-group">
-							<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
-							<img src="./images/icon-error.svg" alt="" class="alert-error-icon" />
+							<input type="text" name="lastName" id="lastName" placeholder="Last Name" required />
+							<img src="./images/icon-error.svg" alt="" />
+							<p class="error-text"></p>
 						</div>
-						<p class="alert-error-text">Last Name cannot be empty</p>
 						<div class="form-group">
-							<input type="email" name="email" id="email" placeholder="Email Address" />
-							<img src="./images/icon-error.svg" alt="" class="alert-error-icon" />
+							<input type="email" name="email" id="email" placeholder="Email Address" required />
+							<img src="./images/icon-error.svg" alt="" />
+							<p class="error-text"></p>
 						</div>
-						<p class="alert-error-text">Email Address cannot be empty</p>
 						<div class="form-group">
-							<input type="password" name="password" id="password" placeholder="Password" />
-							<img src="./images/icon-error.svg" alt="" class="alert-error-icon" />
+							<input type="password" name="password" id="password" placeholder="Password" required />
+							<img src="./images/icon-error.svg" alt="" />
+							<p class="error-text"></p>
 						</div>
-						<p class="alert-error-text">Password cannot be empty</p>
 						<button type="submit" id="submit" class="btn-submit bg-green text-white">Claim your free trial</button>
 					</form>
 					<p class="rules text-gray-blue">By clicking the button, you are agreeing to our <a href="#" class="text-red">Terms and Services</a></p>

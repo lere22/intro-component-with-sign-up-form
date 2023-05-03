@@ -130,7 +130,6 @@ main {
 }
 
 .form-group {
-	padding: 1rem 0 1rem 1.3rem;
 	border: 1px solid var(--neutral-grayish-blue);
 	border-radius: 5px;
 	display: flex;
@@ -145,7 +144,9 @@ main {
 }
 
 .form-group input {
+	padding: 1rem 0 1rem 1.3rem;
 	background-color: transparent;
+	width: 100%;
 }
 
 .form-group input::placeholder {
@@ -159,6 +160,14 @@ main {
 	font-family: var(--family-poppins);
 	font-weight: var(--fw-600);
 	color: var(--neutral-dark-blue);
+}
+
+.form-group img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 1.2rem;
+	display: none;
 }
 
 .btn-submit {
@@ -189,28 +198,29 @@ main {
 	font-weight: var(--fw-700);
 }
 
-.alert-error-icon {
+.error-text {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 1.2rem;
-	display: none;
-}
-
-.alert-error-text {
-	margin-top: -0.7rem;
+	top: 110%;
+	right: 0;
 	font-size: 0.7rem;
 	font-weight: var(--fw-500);
 	color: var(--primary-red);
 	font-style: italic;
 	display: none;
-	margin-left: auto;
 	transition: 0.2s ease-out;
 }
 
-.focus-error {
+.form-group.error {
+	margin-bottom: 1rem;
+}
+
+.form-group.error {
 	border: 2px solid var(--primary-red);
 	border-radius: 5px;
+}
+
+.form-group.error img {
+	display: block;
 }
 
 .attribution {
